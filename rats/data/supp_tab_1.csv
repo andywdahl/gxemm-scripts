@@ -1,0 +1,161 @@
+Phenotype,Measure,Measure in GSCAN,Covariates,Transformation,Mapping method,Threshold,No animals
+Anxiety (novel cage),Distance 25' to 30',Distance25_30_bc,"sex,batch,is.albino",boxcox,Mixed models,4.2,1369
+Anxiety (novel cage),Distance first 5',Distance5_bc,"sex,batch,is.albino",boxcox,Mixed models,4.1,1367
+Anxiety (shuttlebox),Mean response latency,Latency1_40_bc,"sex,batch,is.albino",boxcox,Mixed models,4.1,1366
+Anxiety (shuttlebox),Number of avoidances,Avoidances1_40,"sex,batch,is.albino",,Resampling,0.4,1369
+Anxiety (shuttlebox),Number of crosses between trials,InterTrialCross1_40,"sex,batch,is.albino",,Resampling,0.3,1369
+Anxiety (shuttlebox),Time spent freezing,time_freezing_bc,"sex,batch,is.albino",boxcox,Mixed models,4.3,937
+Anxiety (zeromaze),Latency to enter open section,LatencyOpenSection_bc,"sex,batch,is.albino",boxcox,Mixed models,4.1,1166
+Anxiety (zeromaze),Number of entries in open section,EntriesOpenSection,"sex,batch,is.albino",,Resampling,0.7,1375
+Anxiety (zeromaze),Stretched attend postures,PosturesClosedToOpen_bc,"sex,batch,is.albino",boxcox,Mixed models,4.8,1370
+Anxiety (zeromaze),Time spent in open section,TimeOpenSection_bc,"sex,batch,is.albino",boxcox,Mixed models,4.2,1161
+Arterial elastic lamina ruptures,Number of lesions in AA,AA_nb,sex,,Resampling,0.7,559
+Arterial elastic lamina ruptures,Number of lesions in AA and IL,AA_IL_nb,sex,,Resampling,0.7,559
+Arterial elastic lamina ruptures,Number of lesions in IL,IL_nb,sex,,Resampling,0.7,559
+Arterial elastic lamina ruptures,Score of lesions in AA,AA_score,sex,,Resampling,0.7,559
+Arterial elastic lamina ruptures,Score of lesions in AA and IL,AA_IL_score,sex,,Resampling,0.7,559
+Arterial elastic lamina ruptures,Score of lesions in IL,IL_score,sex,,Resampling,0.7,559
+Body weight,Body weight at day immunization,BW_at_day_immunization_bc,sex,boxcox,Mixed models,3.6,1226
+Bone morphology,Axis length,AL,"sex,batch,BW_at_day9_pi,age",,Mixed models,4.6,1172
+Bone morphology,Bone head width,HW,"sex,batch,BW_at_day9_pi,age",,Mixed models,4.1,1172
+Bone morphology,Bone neck width,NW,"sex,batch,BW_at_day9_pi,age",,Mixed models,4.2,1170
+Bone morphology,Distal femur cortical area,dist_femur_CRT_A,"sex,batch,BW_at_day9_pi,age",,Mixed models,4.6,1170
+Bone morphology,Distal femur cortical density,dist_femur_CRT_DEN,"sex,batch,BW_at_day9_pi,age",,Mixed models,5.8,1172
+Bone morphology,Distal femur total area,dist_femur_TOT_A,"sex,batch,BW_at_day9_pi,age",,Mixed models,4.9,1172
+Bone morphology,Distal femur total density,dist_femur_TOT_DEN,"sex,batch,BW_at_day9_pi,age",,Mixed models,3.9,1171
+Bone morphology,Distal femur trabecular area,dist_femur_TRAB_A,"sex,batch,BW_at_day9_pi,age",,Mixed models,4.9,1172
+Bone morphology,Distal femur trabecular density,dist_femur_TRAB_DEN,"sex,batch,BW_at_day9_pi,age",,Mixed models,4.7,1172
+Bone morphology,Femoral neck cortical area,fem_neck_CRT_A,"sex,batch,BW_at_day9_pi,age",,Mixed models,4.7,1158
+Bone morphology,Femoral neck cortical density,fem_neck_CRT_DEN,"sex,batch,BW_at_day9_pi,age",,Mixed models,5.4,1158
+Bone morphology,Femoral neck elongation,fem_neck_biomech_EL,"sex,batch,BW_at_day9_pi,age",,Mixed models,4.3,1075
+Bone morphology,Femoral neck polar moment or inertia,fem_neck_IP_TOT_W,"sex,batch,BW_at_day9_pi,age",,Mixed models,4.3,1144
+Bone morphology,Femoral neck stiffness,fem_neck_biomech_S,"sex,batch,BW_at_day9_pi,age",,Mixed models,4.5,1075
+Bone morphology,Femoral neck total area,fem_neck_TOT_A,"sex,batch,BW_at_day9_pi,age",,Mixed models,4.3,1158
+Bone morphology,Femoral neck total density,fem_neck_TOT_DEN,"sex,batch,BW_at_day9_pi,age",,Mixed models,3.8,1158
+Bone morphology,Femoral neck trabecular area,fem_neck_TRAB_A,"sex,batch,BW_at_day9_pi,age",,Mixed models,3.9,1158
+Bone morphology,Femoral neck trabecular density,fem_neck_TRAB_DEN,"sex,batch,BW_at_day9_pi,age",,Mixed models,4.3,1158
+Bone morphology,Femoral neck ultimate force,fem_neck_biomech_Fu,"sex,batch,BW_at_day9_pi,age",,Mixed models,4.3,1075
+Bone morphology,Femoral neck work to failure,fem_neck_biomech_W,"sex,batch,BW_at_day9_pi,age",,Mixed models,4.1,1075
+Bone morphology,Femur area,femur_Area,"sex,batch,BW_at_day9_pi,age",,Mixed models,3.9,1174
+Bone morphology,Femur elongation,fem_biomech_EL,"sex,batch,BW_at_day9_pi,age",,Mixed models,4,1161
+Bone morphology,Femur midshaft cortical area,femur_midshaft_CRT_A,"sex,batch,BW_at_day9_pi,age",,Mixed models,4.3,1171
+Bone morphology,Femur midshaft cortical density,femur_midshaft_CRT_DEN,"sex,batch,BW_at_day9_pi,age",,Mixed models,4.5,1171
+Bone morphology,Femur midshaft polar moment of inertia,femur_midshaft_IP_TOT_W,"sex,batch,BW_at_day9_pi,age",,Mixed models,4.1,1171
+Bone morphology,Femur midshaft total area,femur_midshaft_TOT_A,"sex,batch,BW_at_day9_pi,age",,Mixed models,4.1,1171
+Bone morphology,Femur midshaft total density,femur_midshaft_TOT_DEN,"sex,batch,BW_at_day9_pi,age",,Mixed models,4.4,1171
+Bone morphology,Femur mineral content,femur_BMC,"sex,batch,BW_at_day9_pi,age",,Mixed models,4.6,1174
+Bone morphology,Femur mineral density,femur_BMD,"sex,batch,BW_at_day9_pi,age",,Mixed models,5.1,1174
+Bone morphology,Femur stiffness,fem_biomech_S,"sex,batch,BW_at_day9_pi,age",,Mixed models,4.7,1168
+Bone morphology,Femur ultimate force,fem_biomech_Fu,"sex,batch,BW_at_day9_pi,age",,Mixed models,4.3,1168
+Bone morphology,Femur work to failure,fem_biomech_W,"sex,batch,BW_at_day9_pi,age",,Mixed models,4.1,1168
+Bone morphology,Length to femoral head,LFH,"sex,batch,BW_at_day9_pi,age",,Mixed models,4.2,1172
+Bone morphology,Length to trochanter,LT,"sex,batch,BW_at_day9_pi,age",,Mixed models,4,1172
+Bone morphology,Lumbar area,lumbar_Area,"sex,batch,BW_at_day9_pi,age",,Mixed models,4.3,1172
+Bone morphology,Lumbar cortical area,lumbar_CRT_A,"sex,batch,BW_at_day9_pi,age",,Mixed models,4.6,1173
+Bone morphology,Lumbar mineral content,lumbar_BMC,"sex,batch,BW_at_day9_pi,age",,Mixed models,4.8,1173
+Bone morphology,Lumbar mineral density,lumbar_BMD,"sex,batch,BW_at_day9_pi,age",,Mixed models,4.8,1173
+Bone morphology,Lumbar total area,lumbar_TOT_A,"sex,batch,BW_at_day9_pi,age",,Mixed models,4.4,1173
+Bone morphology,Lumbar total density,lumbar_TOT_DEN,"sex,batch,BW_at_day9_pi,age",,Mixed models,5,1173
+Bone morphology,Lumbar trabecular area,lumbar_TRAB_A,"sex,batch,BW_at_day9_pi,age",,Mixed models,3.9,1173
+Bone morphology,Lumbar trabecular density,lumbar_TRAB_DEN,"sex,batch,BW_at_day9_pi,age",,Mixed models,5.1,1173
+Bone morphology,Lumber cortical density,lumbar_CRT_DEN,"sex,batch,BW_at_day9_pi,age",,Mixed models,6.6,1173
+Cardiovascular function,Blood pressure,bloodpressure_bc,"sex,batch",boxcox,Mixed models,4.5,1386
+Cardiovascular function,Heart weight,heart_weight_bc,"sex,batch,BW_at_day9_pi",boxcox,Mixed models,3.8,1174
+Coat colour,Is albino ,is.albino,,,Resampling,NA,1407
+Coat colour,Is dark brown,is.DB,,,Resampling,NA,1407
+Coat colour,Is light brown,is.LB,,,Resampling,NA,1407
+Coat colour,Is spotted,is.spotted,,,Resampling,NA,1407
+Glucose tolerance,Area under glycemia curve,AUC_G_bc,"sex,batch,test_worked",boxcox,Mixed models,4.4,931
+Glucose tolerance,Area under glycemia curve over baseline,DeltaG_bc,"sex,batch,test_worked",boxcox,Mixed models,4.2,938
+Glucose tolerance,Glycemia 120' after injection,G120_bc,"sex,batch,test_worked",boxcox,Mixed models,4.5,934
+Glucose tolerance,Glycemia 30' after injection,G30_bc,"sex,batch,test_worked",boxcox,Mixed models,4.2,930
+Glucose tolerance,Glycemia 60' after injection,G60_bc,"sex,batch,test_worked",boxcox,Mixed models,4.4,933
+Glucose tolerance,Glycemia before injection,G0_bc,"sex,batch,test_worked",boxcox,Mixed models,4.6,936
+Hematology,Calculated mean cell haemoglobin concentration,CHCM_bc,"sex,batch",boxcox,Mixed models,5.6,1302
+Hematology,Hematocrit,HCT_bc,"sex,batch",boxcox,Mixed models,4.2,1295
+Hematology,Hemoglobin,measHGB_bc,"sex,batch",boxcox,Mixed models,4.5,1298
+Hematology,Hemoglobin distribution width,HDW_bc,"sex,batch",boxcox,Mixed models,4.4,1307
+Hematology,Lob-index,lob_Index_bc,"sex,batch",boxcox,Mixed models,4.9,1313
+Hematology,Mean corpuscular hemoglobin,MCH_bc,"sex,batch",boxcox,Mixed models,4,1304
+Hematology,Mean corpuscular volume,MCV_bc,"sex,batch",boxcox,Mixed models,4.6,1311
+Hematology,Mean peroxidase index,MPXI_bc,"sex,batch",boxcox,Mixed models,6.1,1297
+Hematology,Mean platelet component,MPC_bc,"sex,batch",boxcox,Mixed models,4.8,1293
+Hematology,Mean platelet mass,MPM_bc,"sex,batch",boxcox,Mixed models,4.8,1279
+Hematology,Mean platelet volume,MPV_bc,"sex,batch",boxcox,Mixed models,4.8,1294
+Hematology,Measured mean cell hemoglobin concentration,MCHC_bc,"sex,batch",boxcox,Mixed models,5.5,1301
+Hematology,Platelet clumps,PltClumps_bc,"sex,batch",boxcox,Mixed models,4.3,1229
+Hematology,Platelet component distribution width,PCDW_bc,"sex,batch",boxcox,Mixed models,5.3,1299
+Hematology,Platelet count,PLT_bc,"sex,batch",boxcox,Mixed models,4.3,1312
+Hematology,Platelet distribution width,PDW_bc,"sex,batch",boxcox,Mixed models,5.1,1304
+Hematology,Plateletcrit,PCT_bc,"sex,batch,BW_at_IPGTT",boxcox,Mixed models,4.8,1309
+Hematology,Proportion of basophils in WBC,BASO_bc,"sex,batch",boxcox,Mixed models,5.5,1306
+Hematology,Proportion of eosinophils in WBC,EOS_bc,"sex,batch",boxcox,Mixed models,4.3,1313
+Hematology,Proportion of large unstained cells in WBC,LUC_bc,"sex,batch",boxcox,Mixed models,5.6,1301
+Hematology,Proportion of lymphocytes in WBC,LYM_bc,"sex,batch",boxcox,Mixed models,4.4,1302
+Hematology,Proportion of monocytes in WBC,MONO_bc,"sex,batch",boxcox,Mixed models,4.7,1313
+Hematology,Proportion of neutrophils in WBC,NEUT_bc,"sex,batch",boxcox,Mixed models,4.2,1310
+Hematology,Red blood cell count,RBC_bc,"sex,batch",boxcox,Mixed models,3.8,1293
+Hematology,Red blood cell distribution width,RDW_bc,"sex,batch",boxcox,Mixed models,4.4,1300
+Hematology,WBC in the Baso channel,WBCB_bc,"sex,batch",boxcox,Mixed models,4.2,1313
+Immunology,Absolute B cells,Abs_Bcells,sex,quantile normalization by batch,Mixed models,4.2,744
+Immunology,Absolute CD25+CD4+ cells,Abs_CD25CD4,sex,quantile normalization by batch,Mixed models,4.2,727
+Immunology,Absolute CD25+CD8+ cells,Abs_CD25CD8,sex,quantile normalization by batch,Mixed models,4.2,726
+Immunology,Absolute CD4+ T cells,CD4Tcells_Abs,sex,quantile normalization by batch,Mixed models,4.4,1168
+Immunology,Absolute CD8+ T cells,CD8Tcells_Abs,sex,quantile normalization by batch,Mixed models,4.1,1166
+Immunology,Absolute T cells,Tcells_Abs,sex,quantile normalization by batch,Mixed models,4.3,1187
+Immunology,Expression of CD25 on C84+ cells,CD25expCD8,sex,quantile normalization by batch,Mixed models,4.1,1024
+Immunology,Expression of CD25 on CD4+ cells,CD25expCD4,sex,quantile normalization by batch,Mixed models,4.3,1207
+Immunology,Expression of CD28 on T cells,CD28expTcells,sex,quantile normalization by batch,Mixed models,4.2,900
+Immunology,Expression of CD45 in CD4+ cells,CD45RCexpCD4,sex,quantile normalization by batch,Mixed models,4.2,541
+Immunology,Expression of CD45 in CD8+ cells,CD45RCexpCD8,sex,quantile normalization by batch,Mixed models,4.2,540
+Immunology,Expression of RT1A on granulocytes,RT1AexpGran,sex,quantile normalization by batch,Mixed models,4.2,1082
+Immunology,Expression on RT1B on B cells,RT1BexpBcell,sex,quantile normalization by batch,Mixed models,4.2,813
+Immunology,Proportion of B cells in in WBC,pctBcells,sex,quantile normalization by batch,Mixed models,4.2,1231
+Immunology,Proportion of CD4-CD8- T cells,pctDP,sex,quantile normalization by batch,Mixed models,4.2,769
+Immunology,Proportion of CD4+ cells expressing CD25,pctCD25posCD4,sex,quantile normalization by batch,Mixed models,4.3,1198
+Immunology,Proportion of CD4+ cells in T cells,CD4_Pct,sex,quantile normalization by batch,Mixed models,4.2,1255
+Immunology,Proportion of CD4+ cells with expressing CD45RC,pctCD45RCposCD4,sex,quantile normalization by batch,Mixed models,4.1,542
+Immunology,Proportion of CD4+ cells with high expression of CD25,CD25highCD4,sex,quantile normalization by batch,Mixed models,4.2,569
+Immunology,Proportion of CD4+ cells with high expression of CD45RC,pctCD45RChighCD4,sex,quantile normalization by batch,Mixed models,4.2,535
+Immunology,Proportion of CD4+ cells with low expression of CD45RC,pctCD45RClowCD4,sex,quantile normalization by batch,Mixed models,4.2,539
+Immunology,Proportion of CD4+ cells with not expressing CD45RC,pctCD45RCnegCD4,sex,quantile normalization by batch,Mixed models,4.1,186
+Immunology,Proportion of CD4+CD8+ T cells,pctDN,sex,quantile normalization by batch,Mixed models,4.2,185
+Immunology,Proportion of CD8+ cells expressing CD25,pctCD25posCD8,sex,quantile normalization by batch,Mixed models,4.2,1147
+Immunology,Proportion of CD8+ cells in T cells,CD8_Pct,sex,quantile normalization by batch,Mixed models,4.2,1256
+Immunology,Proportion of CD8+ cells with expressing of CD45RC,pctCD45RCposCD8,sex,quantile normalization by batch,Mixed models,4.2,540
+Immunology,Proportion of CD8+ cells with high expression of CD25,CD25highCD8,sex,quantile normalization by batch,Mixed models,4,183
+Immunology,Proportion of CD8+ cells with high expression of CD45RC,pctCD45RChighCD8,sex,quantile normalization by batch,Mixed models,4.1,538
+Immunology,Proportion of CD8+ cells with low expression of CD45RC,pctCD45RClowCD8,sex,quantile normalization by batch,Mixed models,4.2,535
+Immunology,Proportion of CD8+ cells with not expressing of CD45RC,pctCD45RCnegCD8,sex,quantile normalization by batch,Mixed models,4.1,187
+Immunology,Proportion of T cells expressing RT1B,pctRT1BposTcell,sex,quantile normalization by batch,Mixed models,4.1,393
+Immunology,Proportion of T cells in WBC,Tcells_Pct,sex,quantile normalization by batch,Mixed models,4.1,1029
+Immunology,Ratio of CD4+cells to CD8+ cells,CD4_CD8_ratio,sex,quantile normalization by batch,Mixed models,4.2,1248
+Immunology,Ratio of T cells to B cells,Tcell_Bcellratio,sex,quantile normalization by batch,Mixed models,4.2,1021
+Induced neuroinflammation,Balance disturbance,BD,"sex,batch",,Resampling,NA,1401
+Induced neuroinflammation,Cumulative scores,AUC_bc,"sex,batch",boxcox,Mixed models,4.3,457
+Induced neuroinflammation,Died,died,"sex,batch",,Resampling,NA,1405
+Induced neuroinflammation,Duration,DUR_bc,"sex,batch",boxcox,Mixed models,4.2,457
+Induced neuroinflammation,First day with score>=1,ONSET,"sex,batch",,Resampling,NA,457
+Induced neuroinflammation,Lowest weight,LW_bc,"sex,batch",boxcox,Mixed models,3.6,1383
+Induced neuroinflammation,Maximum score,max_bc,"sex,batch",boxcox,Mixed models,4.2,457
+Induced neuroinflammation,Symptoms for at least one day,INC,"sex,batch",,Resampling,NA,1405
+Induced neuroinflammation,Symptoms for at least two days,EAE,"sex,batch",,Resampling,NA,1405
+Induced neuroinflammation,Weight loss compared to day 0,WL0_bc,"sex,batch",boxcox,Mixed models,4.2,1197
+Induced neuroinflammation,Weight loss compared to day 9,WL9_ALT_bc,"sex,batch",boxcox,Mixed models,4.3,1357
+Renal agenesis,Renal agenesis,Has1kidney,sex,,Resampling,NA,1407
+Serum biochemistry,Alanine aminotransferase,ALT_bc,"sex,batch,Haemalysis",boxcox,Mixed models,4.1,1157
+Serum biochemistry,Alkaline phosphatase,ALP_bc,"sex,batch",boxcox,Mixed models,4.2,1365
+Serum biochemistry,Aspartate aminotransferase,AST_bc,"sex,batch,BW_at_day28_pi,Haemalysis",boxcox,Mixed models,4.4,1126
+Serum biochemistry,Basal glycemia,Glucose_bc,"sex,batch",boxcox,Mixed models,4.6,1359
+Serum biochemistry,Calcium,Calcium_bc,"sex,batch",boxcox,Mixed models,5.3,1358
+Serum biochemistry,Chloride,Chloride_bc,"sex,batch",boxcox,Mixed models,4.7,1351
+Serum biochemistry,Creatinine,Creatinine_bc,"sex,batch",boxcox,Mixed models,4.1,1346
+Serum biochemistry,HDL,HDL_bc,"sex,batch",boxcox,Mixed models,4.4,1355
+Serum biochemistry,Iron,Iron_bc,"sex,batch",boxcox,Mixed models,3.7,1359
+Serum biochemistry,LDL,LDL_bc,"sex,batch",boxcox,Mixed models,4.4,1347
+Serum biochemistry,Potassium,Potassium_bc,"sex,batch,Haemalysis",boxcox,Mixed models,4.7,1034
+Serum biochemistry,Sodium,Sodium_bc,"sex,batch",boxcox,Mixed models,4.4,1348
+Serum biochemistry,Total cholesterol,Tot.Chol_bc,"sex,batch,Haemalysis",boxcox,Mixed models,4.4,1194
+Serum biochemistry,Triglycerides,Trig._bc,"sex,batch,BW_at_day28_pi",boxcox,Mixed models,4.3,1295
+Serum biochemistry,Urea,Urea_bc,"sex,batch,BW_at_day28_pi,Haemalysis",boxcox,Mixed models,4.2,1124
+Wound healing,Hole area,Area_bc,"sex,batch,reliable",boxcox,Mixed models,4.6,1054

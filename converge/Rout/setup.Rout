@@ -1,0 +1,76 @@
+ [1] "CSA"                    "stress"                 "LS.1"                  
+ [4] "LS.3"                   "LS.4"                   "LS.5"                  
+ [7] "LS.6"                   "LS.7"                   "LS.8"                  
+[10] "LS.9"                   "LS.10"                  "LS.12"                 
+[13] "LS.13"                  "LS.14"                  "LS.16"                 
+[16] "SepDivWid"              "Neuroticism"            "cold_m"                
+[19] "auth_m"                 "prot_m"                 "cold_f"                
+[22] "auth_f"                 "prot_f"                 "pre.menstrual.symptoms"
+[25] "height.clean"           "bmi"                    "mitochondria.lDNA"     
+[28] "telomere.length"        "stressall"              "stresspc"              
+[31] "stresspc2"             
+ [1] "isCase"                       "Melancholia"                 
+ [3] "Panic"                        "generalized.anxiety.disorder"
+ [5] "Dysthymia"                    "Postnatal.D"                 
+ [7] "SepDivWid"                    "MD.episodes.tranched"        
+ [9] "Neuroticism"                  "family.history.count"        
+[11] "pre.menstrual.symptoms"       "height.clean"                
+[13] "bmi"                          "mitochondria.lDNA"           
+[15] "telomere.length"              "stressall"                   
+ [1] "isCase"                       "Melancholia"                 
+ [3] "Panic"                        "generalized.anxiety.disorder"
+ [5] "Dysthymia"                    "Postnatal.D"                 
+ [7] "SepDivWid"                    "MD.episodes.tranched"        
+ [9] "Neuroticism"                  "family.history.count"        
+[11] "pre.menstrual.symptoms"       "height.clean"                
+[13] "bmi"                          "mitochondria.lDNA"           
+[15] "telomere.length"              "stressall"                   
+ [1] "isCase"                       "Melancholia"                 
+ [3] "Panic"                        "generalized.anxiety.disorder"
+ [5] "Dysthymia"                    "Postnatal.D"                 
+ [7] "SepDivWid"                    "MD.episodes.tranched"        
+ [9] "family.history.count"         "pre.menstrual.symptoms"      
+[11] "height.clean"                 "bmi"                         
+[13] "mitochondria.lDNA"            "stressall"                   
+     CSA stress LS.1 LS.3 LS.4 LS.5 LS.6 LS.7 LS.8 LS.9 LS.10 LS.12 LS.13 LS.14
+[1,] 518   1602  815  752  353  920  185  536  404  519   387   342   229   504
+[2,] 131    977  673  535  147  627   52  343  327  530   353   125    43    92
+     LS.16 SepDivWid
+[1,]   357       609
+[2,]   203       320
+        isCase             Melancholia   Panic           
+Ybnames "Major Depression" "Melancholia" "Panic Disorder"
+        "4640"             "4630"        "297"           
+        "0"                "0"           "0"             
+        generalized.anxiety.disorder Dysthymia   Postnatal.D            CSA  
+Ybnames "Anxiety Disorder"           "Dysthymia" "Postnatal Depression" "CSA"
+        "1123"                       "455"       "815"                  "518"
+        "0"                          "0"         "0"                    "131"
+        stress   family.history_father family.history_mother agora.diag   
+Ybnames "Stress" "Father MD"           "Mother MD"           "Agoraphobia"
+        "1602"   "317"                 "576"                 "533"        
+        "977"    "0"                   "0"                   "0"          
+        social.diag     animal.diag     situational.diag     blood.diag    
+Ybnames "Social Phobia" "Animal Phobia" "Situational Phobia" "Blood Phobia"
+        "465"           "998"           "663"                "690"         
+        "0"             "0"             "0"                  "0"           
+        LS.1                 LS.2                 LS.3         LS.4   
+Ybnames "Close Family Death" "Divorced_Separated" "Unemployed" "Fired"
+        "815"                "887"                "752"        "353"  
+        "673"                "366"                "535"        "147"  
+        LS.5               LS.6            LS.7              LS.8              
+Ybnames "Finanical Crisis" "Legal Probems" "Serious Illness" "Serious Accident"
+        "920"              "185"           "536"             "404"             
+        "627"              "52"            "343"             "327"             
+        LS.9               LS.10                LS.11   LS.12                
+Ybnames "Natural Disaster" "Witnessed Violence" "Raped" "Physically Attacked"
+        "519"              "387"                "95"    "342"                
+        "530"              "353"                "3"     "125"                
+        LS.13              LS.14                LS.15                 
+Ybnames "Abused as Child " "Neglected as Child" "Violently Threatened"
+        "229"              "504"                "74"                  
+        "43"               "92"                 "17"                  
+        LS.16                   SepDivWid
+Ybnames "Other Terrible Events" "Widowed"
+        "357"                   "609"    
+        "203"                   "320"    
