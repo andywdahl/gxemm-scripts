@@ -38,23 +38,23 @@ try({
 	tmpdir  <- paste0( '/wynton/scratch/gxemm/tmpdir_', sigtype, '_', it, '_', xval, '_qsim' )
 
 	if( ! file.exists( savefile1 ) ){
-		out_hom		<- GxEMM_dev( y, X, K, Z,gtype='hom', tmpdir=tmpdir, noise_K0=TRUE )
+		out_hom		<- GxEMM( y, X, K, Z,gtype='hom', tmpdir=tmpdir, noise_K0=TRUE )
 		save( out_hom, file=savefile1 )
 	}
 	if( ! file.exists( savefile2 ) ){
-		out_het		<- GxEMM_dev( y, X, K, Z, gtype='iid', tmpdir=tmpdir, noise_K0=TRUE )
+		out_het		<- GxEMM( y, X, K, Z, gtype='iid', tmpdir=tmpdir, noise_K0=TRUE )
 		save( out_het, file=savefile2 )
 	}
 	if( ! file.exists( savefile3 ) ){
-		out_diag	<- GxEMM_dev( y, X, K, Z, gtype='free', etype='free', tmpdir=tmpdir, noise_K0=TRUE )
+		out_diag	<- GxEMM( y, X, K, Z, gtype='free', etype='free', tmpdir=tmpdir, noise_K0=TRUE )
 		save( out_diag, file=savefile3 )
 	}
 	if( ! file.exists( savefile4 ) ){
-		out_diag1	<- GxEMM_dev( y, X, K, Z, gtype='free', etype='hom', tmpdir=tmpdir, noise_K0=TRUE )
+		out_diag1	<- GxEMM( y, X, K, Z, gtype='free', etype='hom', tmpdir=tmpdir, noise_K0=TRUE )
 		save( out_diag1, file=savefile4 )
 	}
 	if( ! file.exists( savefile5 ) ){
-		out_hom1	<- GxEMM_dev( y, X, K, Z, gtype='hom', etype='free', tmpdir=tmpdir, noise_K0=TRUE )
+		out_hom1	<- GxEMM( y, X, K, Z, gtype='hom', etype='free', tmpdir=tmpdir, noise_K0=TRUE )
 		save( out_hom1, file=savefile5 )
 	}
 	rm( K, Z, X )

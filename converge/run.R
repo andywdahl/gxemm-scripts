@@ -16,7 +16,6 @@ for( pp in rev(ppsub) ){
 	if( pp > ncol(Yb) ){
 		Z		<- Y[,pp-ncol(Yb),drop=T]
 		Z		<- (Z-min(Z))/(max(Z)-min(Z))
-		print( range(Z) )
 		Z		<- cbind( Z, 1-Z )
 	} else {
 		Z		<- Yb2Z( Yb[,pp] )
