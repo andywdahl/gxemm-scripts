@@ -56,8 +56,8 @@ pdf( paste0( '~/figs/gxemm/Fig4a.pdf' ), width=6.7, height=3.6 )
 gxemm.h2violin(
 	h2s[,c('g', 'iid', 'd1', 'd2', 'dum', 'hom', 'het')],
 	allps[,c('hom','iid','d1','d2','het')],
-	xlabs	= expression( h[GREML]^2, h[iid]^2, h[female]^2, h[male]^2, '', h[hom]^2, h[het]^2, '', sigma[g]^2 , v[fe], v[ma], w[fe]-w[ma] ),
-	ypos=c( -.75,-.89,-1.04,1.31),
+	xlabs	= expression( h[g]^2, h[iid]^2, h[female]^2, h[male]^2, '', h[hom]^2, h[het]^2, '', sigma[g]^2 , v[fe], v[ma], w[fe]-w[ma] ),
+	ypos=c( -.75,-.89,-1.04,1.38,1.15),
 	limits=c(-0.2,1.1)
 )
 dev.off()
@@ -72,7 +72,7 @@ gxemm.sig2violin(
 dev.off()
 
 
-info		<- read.csv( 'data/supp_tab_1.csv' )
+info		<- read.csv( 'raw_data/supp_tab_1.csv' )
 infosub	<- which( info[,'Measure.in.GSCAN'] %in% gwas_phens )
 info		<- info[infosub,]
 

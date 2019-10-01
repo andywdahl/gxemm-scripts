@@ -3,7 +3,7 @@ library(BEDMatrix)
 load( 'Rdata/setup.Rdata' )
 
 ## load X
-load( '../converge_prev/parsed_data/base.Rdata' )
+load( '../converge/parsed_data/base.Rdata' )
 X				<- scale(G)
 Xnames	<- rownames(G)
 N				<- nrow(X)

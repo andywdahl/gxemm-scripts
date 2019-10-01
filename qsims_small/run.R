@@ -2,16 +2,13 @@ rm( list=ls() )
 library(BEDMatrix)
 library(GxEMM)
 source( '../code/sim_fxn.R' )
-#load( '/ye/zaitlenlabstore/andy/GxEMM_final/sims_Rdata/setup.Rdata' )
-load( 'Rdata/setup.Rdata' )
+load( '../qsims/Rdata/setup.Rdata' )
 
 
-itt	<- as.numeric( commandArgs(TRUE)[[1]] )
-set.seed( round(as.numeric(Sys.time())) + itt )
-for( it in itt:maxit )
-	for( xval in sample(nx) )
-try({
-		for( sigtype in sample(5) )
+it	<- as.numeric( commandArgs(TRUE)[[1]] )
+for( xval in sample(nx) )try({
+
+	for( sigtype in sample(5) )
 	
 	if( sigtype == 4 & xval == 1 ) next
 

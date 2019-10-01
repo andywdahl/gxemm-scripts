@@ -3,15 +3,14 @@ load( file='Rdata/setup.Rdata' )
 library(GxEMM)
 source( '../code/gxemm.violin.R' )
 
-type	<- 'base'
 h2s		<- array( NA, dim=c(length(envs), 14), dimnames=list( envs, c( 'g', 'iid', 'd1', 'd2', 'dum', 'hom', 'het', 'dum1', 'sig20', 'va', 'vb', 'wa-wb', 'wa', 'wb' ) ) )
 allps	<- array( NA, dim=c(length(envs), 8	), dimnames=list( envs, c('hom','iid','d1','d2','het','va','vb','wa-wb') ) )
 for( phen in ppsub )
 try({
 
-	savefile1	<- paste0( 'Rdata/hom/2_'	, phen, '_', type, '.Rdata' )
-	savefile2	<- paste0( 'Rdata/het/2_'	, phen, '_', type, '.Rdata' )
-	savefile3	<- paste0( 'Rdata/diag/2_', phen, '_', type, '.Rdata' )
+	savefile1	<- paste0( 'Rdata/hom/'	, phen, '.Rdata' )
+	savefile2	<- paste0( 'Rdata/het/'	, phen, '.Rdata' )
+	savefile3	<- paste0( 'Rdata/diag/', phen, '.Rdata' )
 
 	load( savefile1 )
 	if( out_hom == 'FAILED' ) file.remove( savefile1 )
@@ -46,7 +45,7 @@ for( ii in 1:2 ){
 		limits1	<- c(-1.2, 1.8 )
 		ypos2		<- c(-5.0,-6.0,-7.0,5.2)
 		limits2	<- c(-2.5, 4.1)
-		xlabs1	<- expression( h[GREML]^2, h[iid]^2, h[stress]^2, h[not]^2, '', h[hom]^2, h[het]^2 )
+		xlabs1	<- expression( h[g]^2, h[iid]^2, h[stress]^2, h[not]^2, '', h[hom]^2, h[het]^2 )
 		xlabs2	<- expression( sigma[g]^2 , v[stress], v[not], w[stress]-w[not] )
 		Bp			<- length(ppsub1)
 		goodphens	<- ppsub1

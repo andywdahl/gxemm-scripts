@@ -22,10 +22,16 @@ simfxn	<- function( it, X, Z, G, sig2hom, sig2het, tauhet, bin=FALSE, prev=.2, f
 		alpha		<- rnorm( ncol(X), sd=sd.alpha )
 	}
 
+	if( ncol(Z) == 1 ){
+		GZ	<- sapply( 1:nrow(Z), function(i) G[i,] %*% ( allbetas %*% Z[i,,drop=F] ) )
+	} else {
+		GZ	<- sapply( 1:nrow(Z), function(i) G[i,] %*% ( allbetas %*% Z[i,] ) )
+	}
+
 	y	<- as.numeric(
 		X %*% alpha +
 		G %*% rnorm( S, sd=sqrt( sig2hom/S ) ) +
-		sapply( 1:nrow(Z), function(i) G[i,] %*% ( allbetas %*% Z[i,] ) ) +
+		GZ +
 		epsilon
 	)
 
@@ -45,7 +51,8 @@ sample_G	<- function(seed,ncaus,Xnames,lens){
 	for( chr in 1:22 ){
 		if( ncaus.chr[chr] == 0 ) next
 		suppressMessages(
-			dat	<- BEDMatrix( paste0( '/ye/zaitlenlabstore/andy/raw_data/converge_data_nov_2017/chr', chr, '.info95maf05.hwe6.mddstress' ) )
+			########dat	<- BEDMatrix( paste0( '/ye/zaitlenlabstore/andy/raw_data/converge_data_nov_2017/chr', chr, '.info95maf05.hwe6.mddstress' ) )
+			dat	<- BEDMatrix( paste0( '/wynton/scratch/gxemm/converge_data_nov_2017/chr', chr, '.info95maf05.hwe6.mddstress' ) )
 		)
 		rownames(dat)	<- sapply( rownames(dat), function(x) strsplit( x, '_MD' )[[1]][1] )
 		sub	<- intersect( Xnames, rownames(dat) )

@@ -5,10 +5,10 @@ library(scales)
 gxemm.h2violin	<- function(
 	h2s,
 	allps,
-	cols=c( 1, '#FB6542', '#3F681C', '#375E97', 'grey', '#FFBB00', NA ),
+	cols=c( 'grey', 'chocolate3', '#FB6542', '#3F681C', 1, 'gold', NA ),
 	limits=range(h2s),
-	ypos=c( -.6,-.75,-.90,1.3),
-	xlabs	= expression( h[GREML]^2, h[iid]^2, h[male]^2, h[female]^2, '', h[hom]^2, h[het]^2, '', sigma[g]^2 , v[ma], v[fe], w[ma]-w[fe] ),
+	ypos=c( -.6,-.75,-.90,1.3,1.1),
+	xlabs	= expression( h[g]^2, h[iid]^2, h[male]^2, h[female]^2, '', h[hom]^2, h[het]^2, '', sigma[g]^2 , v[ma], v[fe], w[ma]-w[fe] ),
 	plot.margin=unit(c(1.0, 0.3, 2.0, 0.6), "cm"),
 	ybreaks=c(-.25,0,.25,.5,.75,1,1.25)
 ){
@@ -49,7 +49,7 @@ gxemm.h2violin	<- function(
 		p	<- p + geom_hline(yintercept=xx, linetype="solid" , color = 1     , size=0.7)
 		
 	gp	<- gpar(cex = 1.5)
-	mains		<- c( 'Heritabilities', 'IID GxEMM' )
+	mains		<- c( 'Heritabilities', 'IID Components' )
 	mainpos	<- c(2.5,6.5)
 	for( xx in 1:2 )
 	p		<- p+annotation_custom( grob = textGrob(label=mains[xx], gp=gp), ymin=ypos[4], ymax=ypos[4], xmin=mainpos[xx], xmax=mainpos[xx] )
@@ -74,6 +74,10 @@ gxemm.h2violin	<- function(
 	for( kk in 1:length(xvals) )
 	p		<- p+annotation_custom( grob = textGrob(label=pvec[kk], gp=gp), ymin=ypos[3], ymax=ypos[3], xmin=xvals[kk], xmax=xvals[kk]	)
 
+	p		<- p+annotation_custom( grob = textGrob(label='Hom' , gp=gp), ymin=ypos[5], ymax=ypos[5], xmin=xvals[1]					, xmax=xvals[1]					)
+	p		<- p+annotation_custom( grob = textGrob(label='IID' , gp=gp), ymin=ypos[5], ymax=ypos[5], xmin=xvals[2]					, xmax=xvals[2]					)
+	p		<- p+annotation_custom( grob = textGrob(label='Free', gp=gp), ymin=ypos[5], ymax=ypos[5], xmin=mean(xvals[3:4])	, xmax=mean(xvals[3:4])	)
+
 	gt <- ggplot_gtable(ggplot_build(p))
 	gt$layout$clip[gt$layout$name == "panel"] <- "off"
 	grid.draw(gt)
@@ -83,9 +87,9 @@ gxemm.h2violin	<- function(
 gxemm.sig2violin	<- function(
 	h2s,
 	allps,
-	cols=c( 'grey', '#3F681C', '#375E97', 5 ),
+	cols=c( 'yellow4', '#FB6542', '#3F681C', 6 ),
 	limits=range(h2s,na.rm=T),
-	ypos=c( limits[1]-seq(1.42,2.23,len=3), limits[2]+.55),
+	ypos=c( limits[1]-seq(1.42,2.23,len=3), limits[2]+.61),
 	xlabs	= expression( sigma[g]^2 , v[ma], v[fe], w[ma]-w[fe] ),
 	plot.margin=unit(c(1.0, 0.3, 2.0, 0.6), "cm")
 ){

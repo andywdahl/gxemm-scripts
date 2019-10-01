@@ -27,8 +27,9 @@ mylines	<- function(x,y,col,points=F,trunc=T,pt.cex=2.0,ysd,asts){
 gxemm.plot	<- function(
 	gxemm.hom, gxemm.iid, gxemm.free,
 	pdfname,
-	cols=c( 1, 1, '#FFBB00', '#FB6542', 1, '#3F681C', '#375E97', '#3F681C', '#375E97' ),
+	cols=c( 'grey', 1, 'gold', 'chocolate3', 'yellow4', '#FB6542', '#3F681C', '#FB6542', '#3F681C' ),
 	Enames=1:P,
+	main='',
 	ylim=c(-.1,1.1)
 ){
 
@@ -63,8 +64,12 @@ gxemm.plot	<- function(
 	if( !missing(pdfname) )
 		pdf( pdfname, width=6.8, height=5 )
 
-	layout( matrix( 1:2, 1, 2 ), width=c(7,5) )
-	par( mar=c(6,4.5,.5,1.5) )
+	layout( matrix( c(1,2,1,3), 2, 2 ), width=c(7,5), height=c(1,12) )
+	par( mar=rep(0,4) )
+	plot.new()
+	mtext( side=1, line=-1, text=main, cex=1.5 )
+
+	par( mar=c(5,4.5,.5,1.5) )
 
 	xvals	<- c( 1, 1.6, 2, 2.4, 3.5+seq(-1,1,len=P)*P/10 )
 
@@ -76,21 +81,22 @@ gxemm.plot	<- function(
 	abline( h=x, lty=3, col='lightgrey', lwd=1.5 )
 
 	mylines( xvals[1], h2g				, se.h2g			,trunc=F, col=cols[1], points=T,pt.cex=3, asts=sum( p.h2g		< c( 1e-3,1e-2,.05) ) )
-	mylines( xvals[2], h2iid[1]		, se.h2iid[1]	,trunc=F, col=cols[2], points=T,pt.cex=3, asts=sum( p.h2hom	< c( 1e-3,1e-2,.05) ) )
-	mylines( xvals[3], h2iid[2]		, se.h2iid[2]	,trunc=F, col=cols[3], points=T,pt.cex=3, asts=sum( p.h2het	< c( 1e-3,1e-2,.05) ) )
-	mylines( xvals[4], sum(h2iid)	, se.h2iidsum	,trunc=F, col=cols[4], points=T,pt.cex=3, asts=sum( p.h2iid	< c( 1e-3,1e-2,.05) ) )
+	mylines( xvals[5], h2iid[1]		, se.h2iid[1]	,trunc=F, col=cols[2], points=T,pt.cex=3, asts=sum( p.h2hom	< c( 1e-3,1e-2,.05) ) )
+	mylines( xvals[6], h2iid[2]		, se.h2iid[2]	,trunc=F, col=cols[3], points=T,pt.cex=3, asts=sum( p.h2het	< c( 1e-3,1e-2,.05) ) )
+	mylines( xvals[2], sum(h2iid)	, se.h2iidsum	,trunc=F, col=cols[4], points=T,pt.cex=3, asts=sum( p.h2iid	< c( 1e-3,1e-2,.05) ) )
 
 	for( p in 1:P )
-	mylines( xvals[p+4], h2free[p], se.h2free[p]	,trunc=F, col=cols[5+p], points=T,pt.cex=3, asts=sum( p.h2free[p]	< c( 1e-3,1e-2,.05) ) )
+	mylines( xvals[p+2], h2free[p], se.h2free[p]	,trunc=F, col=cols[5+p], points=T,pt.cex=3, asts=sum( p.h2free[p]	< c( 1e-3,1e-2,.05) ) )
 
-	xlab	<- c( expression( h['g']^2, h['hom']^2, h['het']^2, h['IID']^2 )	, sapply( Enames, function(p) substitute(h[pp]^2, list(pp=p)) ) )
+	xlab	<- c( expression( h['g']^2, h['IID']^2 )	, sapply( Enames, function(p) substitute(h[pp]^2, list(pp=p)) ), expression( h['hom']^2, h['het']^2 ) )
 	axis( 1, at=xvals, lab=xlab, las=2, tick=F, cex.axis=1.4 )
 
-	par( mar=c(6,4.5,.5,.5) )
+	par( mar=c(5,4.5,.5,.5) )
 	xvals	<- c( 1.2, 2+seq(-1,1,len=P)*P/10, 3+seq(-1,1,len=P)*P/10 )
 
-	plot( range(xvals)+c(-.1,.1), range(c(sig2free,-.1))*1.3, type='n', axes=F, xlab='', ylab='Variance Components', bty='n', cex.lab=1.3 )
+	plot( range(xvals)+c(-.1,.1), range(c(sig2free,-.1))*1.3, type='n', axes=F, xlab='', ylab='Free Model Variance Components', bty='n', cex.lab=1.3 )
 	axis(2,cex.axis=.75,tick=F)
+	abline( h=0, lty=1, col=1, lwd=1.5 )
 
 	for( p in 1:(1+2*P) )
 	mylines( xvals[p], sig2free[p], se.sig2free[p]	,trunc=F, col=cols[4+p], points=T,pt.cex=3, asts=sum( p.free[p]	< c( 1e-3,1e-2,.05) ) )

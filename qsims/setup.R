@@ -13,10 +13,10 @@ M.all	<- 666
 maxit	<- 200
 cols	<- c( 1, 'orange', '#FB6542', '#3F681C', '#375E97' )
 
-ltys			<- c(  1						, 3										,1						, 1								, 3												, 2							,1					) #, 1
-cols1			<- c( 'grey'				,'grey'								,'orange'			, 4 							, 4												, 6							,5					) #, 4
-testnames	<- c( 'hom'					,'hom1'								,'iid'				, 'diag4' 				, 'diag3' 								, 'diag1'				,'h2eq'			) #, 'diag2'
-testlabs	<- c( 'Hom vs Null' ,'Hom vs Null | Free'	,'IID vs Hom'	, 'Free vs Hom G'	, 'Free vs Hom G | Hom E'	, 'Free vs IID'	, 'Equal h2') #, 'Free vs Hom'
+ltys			<- c(  1						, 3											,1						, 1								, 3												) #, 2							,1					, 1
+cols1			<- c( 'grey'				,'grey'									,'orange'			, 4 							, 4												) #, 6							,5					, 4
+testnames	<- c( 'hom'					,'hom1'									,'iid'				, 'diag4' 				, 'diag3' 								) #, 'diag1'				,'h2eq'			, 'diag2'
+testlabs	<- c( 'Hom vs Null' ,'Hom vs Null | Free E'	,'IID vs Hom'	, 'Free vs Hom G'	, 'Free vs Hom G | Hom E'	) #, 'Free vs IID'	, 'Equal h2', 'Free vs Hom'
 names( ltys )	<- testnames
 names( cols1 )<- testnames
 
